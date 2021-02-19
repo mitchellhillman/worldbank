@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# World Book API Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple dempnstration of World Bank API.
 
 ## Available Scripts
 

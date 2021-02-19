@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+td {
+  border: 1px solid black;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+thead {
+  background: #ccc;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+select {
+  width: 100%;
+  font-size: 14px;
+  padding: 4px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 14px;  
+}
+
+.loading {
+  font-weight: bold;
+}
+
+.screenreader {
+  overflow: hidden;
+  height: 0;
+  text-indent: -50000px;
+}
+
+.app {
+  width: 600px;
+  margin: 5% auto;
+}
+
+.slider .MuiSlider-root {
+  color: #000;
+}
+
+.slider .MuiSlider-thumb:hover,
+.slider .MuiSlider-thumb.Mui-focusVisible {
+  box-shadow: 0px 0px 0px 8px rgb(0, 0,0,0.1);
+}
+
+
+.slider .MuiSlider-thumb.MuiSlider-active {
+  box-shadow: 0px 0px 0px 12px rgb(0, 0,0,0.1);
 }
