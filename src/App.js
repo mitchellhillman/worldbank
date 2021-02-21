@@ -13,7 +13,7 @@ function App() {
   const [climateData, setclimateData] = useState([]);
 
   useEffect(() => {
-    fetch("http://api.worldbank.org/v2/country?format=json&per_page=500")
+    fetch("https://api.worldbank.org/v2/country?format=json&per_page=500")
       .then(response => response.json())
       .then(data => {
         setCountries(data[1]);
@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     if(selectedCountry) {
-      fetch("http://api.worldbank.org/v2/country/" + selectedCountry + "/indicator/NY.GDP.MKTP.CD?format=json")
+      fetch("https://api.worldbank.org/v2/country/" + selectedCountry + "/indicator/NY.GDP.MKTP.CD?format=json")
         .then(response => response.json())
         .then(data => {
           setGDP(data[1]);
